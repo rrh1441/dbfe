@@ -101,9 +101,9 @@ export default function DealBrief() {
               <Button
                 onClick={() => scrollToSection("snapshot-form")}
                 className="bg-[#003366] hover:bg-[#002244] text-white px-8 py-3 text-sm uppercase tracking-wide border-0 rounded-none focus:ring-2 focus:ring-[#003366] focus:ring-offset-2 transition-colors"
-                aria-label="Get your free threat snapshot"
+                aria-label="Run a free threat snapshot"
               >
-                Get Free Threat Snapshot
+                Run a Free Threat Snapshot
               </Button>
             </div>
 
@@ -147,9 +147,9 @@ export default function DealBrief() {
                 <Button
                   onClick={() => scrollToSection("snapshot-form")}
                   className="bg-[#003366] hover:bg-[#002244] text-white w-full px-8 py-3 text-sm uppercase tracking-wide border-0 rounded-none focus:ring-2 focus:ring-[#003366] focus:ring-offset-2 transition-colors"
-                  aria-label="Get your free threat snapshot"
+                  aria-label="Run a free threat snapshot"
                 >
-                  Get Free Threat Snapshot
+                  Run a Free Threat Snapshot
                 </Button>
               </div>
             </div>
@@ -164,10 +164,10 @@ export default function DealBrief() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-normal text-[#003366] leading-tight" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
-                  See the cyber risks hiding in every deal.
+                  Scout in 5 minutes. Deep-dive in 48 hours. Protect forever.
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed" style={{fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'}}>
-                  From first look to final close to ongoing protection.
+                  Instant attack-surface scans for every company you touch, plus diligence-grade audits and continuous portfolio monitoring—no sales calls, no agents to install.
                 </p>
               </div>
             </div>
@@ -180,7 +180,7 @@ export default function DealBrief() {
                     <CheckCircle className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Free Threat Snapshot</CardTitle>
-                  <p className="text-gray-600 text-lg">Inline summary of critical exposures appears in &lt;15 seconds</p>
+                  <p className="text-gray-600 text-lg">30-second sample report</p>
                 </CardHeader>
                 <CardContent className="px-8 pb-8">
                   <form className="space-y-5">
@@ -195,13 +195,27 @@ export default function DealBrief() {
                       onClick={() => scrollToSection("snapshot-form")}
                       className="bg-[#003366] hover:bg-[#002244] text-white w-full h-12 text-base font-normal rounded-none shadow-sm hover:shadow-md transition-all duration-150 uppercase tracking-wide"
                     >
-                      Get Free Threat Snapshot
+                      Run a Free Threat Snapshot
                     </Button>
                   </form>
                   <div className="mt-6 pt-6 border-t border-gray-100">
-                    <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
-                      <CheckCircle className="h-4 w-4 text-[#2c5530]" />
-                      <span>Inline summary appears in &lt;15 seconds</span>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs text-center text-gray-500">
+                      <div>
+                        <div className="font-semibold text-[#003366]">120+</div>
+                        <div>companies scanned</div>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-[#003366]">&lt; 5 min</div>
+                        <div>first findings</div>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-[#003366]">48 h</div>
+                        <div>full audit SLA</div>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-[#003366]">Zero</div>
+                        <div>production impact</div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -257,8 +271,8 @@ export default function DealBrief() {
       <section id="how-it-works" className="py-20 bg-[#e8e8e8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Our Full-Lifecycle Solution</h2>
-            <p className="text-xl text-gray-600">Scout → Deep Dive → Portfolio Protection</p>
+            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>How It Works</h2>
+            <p className="text-xl text-gray-600">Three-step narrative</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
@@ -268,8 +282,8 @@ export default function DealBrief() {
               </div>
               <div>
                 <h3 className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Scout</h3>
-                <p className="text-gray-600">Rapid screening for early-stage volume</p>
-                <p className="text-sm text-gray-500">$497 per target</p>
+                <p className="text-gray-600">Automated reconnaissance surfaces misconfigurations, leaked secrets and vulnerable sub-domains in under five minutes.</p>
+                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Know in five." Drop high-risk targets before the partner meeting.</p>
               </div>
             </div>
 
@@ -279,8 +293,8 @@ export default function DealBrief() {
               </div>
               <div>
                 <h3 className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deep Dive</h3>
-                <p className="text-gray-600">Diligence-grade analysis for winners</p>
-                <p className="text-sm text-gray-500">$1,497 per target</p>
+                <p className="text-gray-600">48-hour confirmatory audit covering 25+ vectors, financial impact modelling and remediation roadmap.</p>
+                <p className="text-sm text-[#2c5530] font-semibold mt-4">"No surprises at close." Full diligence mapped to EBITDA impact, delivered in 2 days.</p>
               </div>
             </div>
 
@@ -290,8 +304,8 @@ export default function DealBrief() {
               </div>
               <div>
                 <h3 className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Portfolio Protection</h3>
-                <p className="text-gray-600">Continuous monitoring post-close</p>
-                <p className="text-sm text-gray-500">$5K–25K / mo</p>
+                <p className="text-gray-600">Continuous monitoring of every portco with alerting, dashboards and quarterly board packs.</p>
+                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Guard IRR long term." Continuous detection plus board-ready reporting.</p>
               </div>
             </div>
           </div>
@@ -359,7 +373,7 @@ export default function DealBrief() {
                     </>
                   ) : (
                     <>
-                      Get Free Threat Snapshot
+                      Run a Free Threat Snapshot
                       <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                     </>
                   )}
@@ -378,79 +392,117 @@ export default function DealBrief() {
         </div>
       </section>
 
-      {/* Pricing Preview */}
+      {/* Pricing */}
       <section id="pricing" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Product Showcase</h2>
-            <p className="text-xl text-gray-600">Clear upgrade path: start free → add Scout runs → upgrade to Deep Dive → lock in Protection</p>
+            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Pricing</h2>
+            <p className="text-xl text-gray-600">Per-company, self-serve</p>
           </div>
 
-          <div className="overflow-x-auto mb-16">
-            <table className="w-full border-collapse border border-[#d4d4d4]">
-              <thead>
-                <tr className="bg-[#fafafa]">
-                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Product</th>
-                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Description</th>
-                  <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Scout</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Screen 100s of opportunities fast<br/>15 critical risk factors<br/>Red-flag detector<br/>Results in minutes</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$497 per target</td>
-                </tr>
-                <tr className="bg-[#fafafa]">
-                  <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deep Dive</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Due-diligence depth that closes deals<br/>25+ attack vectors<br/>Financial impact modeling<br/>Board-ready PDF & XLS</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$1,497 per target</td>
-                </tr>
-                <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Portfolio Protection</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Ongoing visibility that guards enterprise value<br/>Quarterly board reporting<br/>Early-warning alerts<br/>Trend analysis across portfolio</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$5K–25K / mo</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          
-          <div>
-            <h3 className="text-2xl font-normal text-[#003366] mb-8 text-center" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Subscription Tiers</h3>
+          {/* Scout Tiers */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-normal text-[#003366] mb-8 text-center" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Scout Tiers</h3>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-[#d4d4d4]">
                 <thead>
                   <tr className="bg-[#fafafa]">
                     <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Tier</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Companies / Month</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Monthly Fee</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Ideal For</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Coverage Ceiling</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Cadence</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deliverables</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Price</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Scout 10</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">10</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$99</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Light prospecting & quick triage</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 10 companies/month</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Daily diff</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">15-factor red-flag matrix, cost exposure per issue<br/><em>All include plain-English fixes & Jira export</em></td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$199 / month</td>
                   </tr>
                   <tr className="bg-[#fafafa]">
                     <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Scout 50</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">50</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$299</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Steady deal flow (1-2 screens / day)</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 50 companies/month</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">4-hour diff</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$749 / month</td>
                   </tr>
                   <tr>
                     <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Scout 150</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">150</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$599</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">High-volume sourcing teams</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 150 companies/month</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">30-min diff</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$1,499 / month</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Deep Dive */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-normal text-[#003366] mb-8 text-center" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deep Dive</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-[#d4d4d4]">
+                <thead>
+                  <tr className="bg-[#fafafa]">
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Tier</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Coverage Ceiling</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Cadence</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deliverables</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Deep Dive</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">1 company</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">48-hour turnaround</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">25+-vector audit, remediation roadmap, XLS/PDF board pack</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$3,997 one-time</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Portfolio Protection */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-normal text-[#003366] mb-8 text-center" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Portfolio Protection</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-[#d4d4d4]">
+                <thead>
+                  <tr className="bg-[#fafafa]">
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Tier</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Companies Monitored</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Cadence</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deliverables</th>
+                    <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Portfolio 10</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 10 portcos</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Continuous + Q-brief</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">24×7 scans, alerting, quarterly board deck</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$2,000 / month</td>
                   </tr>
                   <tr className="bg-[#fafafa]">
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Deep Dive</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Pay-as-you-go</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$3,000</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Final confirmatory diligence</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Portfolio 50</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 50 portcos</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Continuous + Q-brief</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$5,000 / month</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Portfolio 150</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 150 portcos</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Continuous + Q-brief</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
+                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$10,000 / month</td>
                   </tr>
                 </tbody>
               </table>
@@ -459,8 +511,53 @@ export default function DealBrief() {
         </div>
       </section>
 
-      {/* Trust Signals */}
+      {/* Competitive Advantage */}
       <section className="py-20 bg-[#e8e8e8]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Competitive Advantage</h2>
+          </div>
+
+          <div className="overflow-x-auto mb-12">
+            <table className="w-full border-collapse border border-[#d4d4d4]">
+              <thead>
+                <tr className="bg-[#fafafa]">
+                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>DealBrief</th>
+                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>UpGuard</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Step-by-step, plain-English fixes for non-security teams</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Security-pro jargon</td>
+                </tr>
+                <tr className="bg-[#fafafa]">
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Financial impact model per finding</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Score-only ratings</td>
+                </tr>
+                <tr>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Self-serve checkout—no demo required</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">"Book a demo" gate</td>
+                </tr>
+                <tr className="bg-[#fafafa]">
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">48 h diligence audit</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">No equivalent offering</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-white border border-[#d4d4d4] p-8 rounded-none">
+            <blockquote className="text-lg text-gray-600 italic mb-4">
+              "UpGuard Starter (50 vendors) lists at $1,599 / mo and Professional (150 vendors) at $3,333 / mo—but only delivers rating-level findings. DealBrief under-cuts per-company cost while providing deeper, step-by-step remediation."
+            </blockquote>
+            <cite className="text-sm text-gray-500">Competitive analysis from industry pricing research</cite>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Trust Signals</h2>
@@ -515,6 +612,32 @@ export default function DealBrief() {
         </div>
       </section>
 
+      {/* Social Proof Strip */}
+      <section className="py-12 bg-[#e8e8e8] border-t border-b border-[#d4d4d4]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center">
+            <div className="flex justify-center items-center space-x-12 mb-4">
+              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
+                SEED VC
+              </div>
+              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
+                GROWTH PE
+              </div>
+              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
+                EARLY VC
+              </div>
+              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
+                TECH SMB
+              </div>
+              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
+                HEALTHCARE
+              </div>
+            </div>
+            <p className="text-sm text-gray-500">Used by investors and operators across tech, healthcare and manufacturing.</p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section id="faq" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
@@ -525,39 +648,37 @@ export default function DealBrief() {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
-                How long is a scan?
+                How does Scout count a "company"?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                Less than 10 minutes per domain. Our scans are external-only and designed to have zero impact on your production systems.
+                One root domain or CIDR block with associated sub-domains.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
-                What data sources do you use?
+                Is any agent or credential required?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                External attack-surface signals only; no intrusive testing. We use public DNS, certificate transparency logs,
-                and other open-source intelligence.
+                No—scanning is 100% external.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
-                Does Deep Dive include financial impact?
+                Can I upgrade tiers mid-cycle?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                Yes, modeled against industry breach benchmarks. We provide board-ready PDF plus raw XLS findings
-                with quantified financial impact estimates.
+                Yes; billing is prorated instantly in-app.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
-                Can we swap companies in a tier?
+                What's the SLA for critical alerts?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                Yes, each quarter. Portfolio Protection allows you to swap companies in your tier to match your current portfolio composition.
+                Email push < 15 minutes, 8 × 5 support < 2 hours.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
