@@ -65,12 +65,23 @@ export default function DealBrief() {
 
   return (
     <div className="min-h-screen bg-[#fffef9]">
+      {/* Compliance Bar */}
+      <div className="h-3 bg-[#E3B341] flex items-center justify-center">
+        <div className="flex items-center space-x-6 text-xs text-[#1a1a1a] font-medium">
+          <Link href="#" className="hover:underline">Privacy Policy</Link>
+          <div className="w-px h-2 bg-[#1a1a1a] opacity-30"></div>
+          <Link href="#" className="hover:underline">Terms</Link>
+          <div className="w-px h-2 bg-[#1a1a1a] opacity-30"></div>
+          <Link href="#" className="hover:underline">Security</Link>
+        </div>
+      </div>
+      
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white border-b-2 border-[#003366]" role="navigation" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link href="#" className="text-2xl font-normal text-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366] rounded" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+              <Link href="#" className="text-2xl font-medium text-[#003366] focus:outline-none focus:ring-2 focus:ring-[#003366] rounded">
                 DealBrief
               </Link>
             </div>
@@ -100,7 +111,7 @@ export default function DealBrief() {
               </button>
               <Button
                 onClick={() => scrollToSection("snapshot-form")}
-                className="bg-[#003366] hover:bg-[#002244] text-white px-8 py-3 text-sm uppercase tracking-wide border-0 rounded-none focus:ring-2 focus:ring-[#003366] focus:ring-offset-2 transition-colors"
+                className="btn-primary focus:ring-2 focus:ring-[#E3B341] focus:ring-offset-2"
                 aria-label="Run a free threat snapshot"
               >
                 Run a Free Threat Snapshot
@@ -146,7 +157,7 @@ export default function DealBrief() {
                 </button>
                 <Button
                   onClick={() => scrollToSection("snapshot-form")}
-                  className="bg-[#003366] hover:bg-[#002244] text-white w-full px-8 py-3 text-sm uppercase tracking-wide border-0 rounded-none focus:ring-2 focus:ring-[#003366] focus:ring-offset-2 transition-colors"
+                  className="btn-primary w-full focus:ring-2 focus:ring-[#E3B341] focus:ring-offset-2"
                   aria-label="Run a free threat snapshot"
                 >
                   Run a Free Threat Snapshot
@@ -163,10 +174,10 @@ export default function DealBrief() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-5xl lg:text-6xl font-normal text-[#003366] leading-tight" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+                <h1 className="text-5xl lg:text-6xl font-medium text-[#003366] leading-tight">
                   Scout in 5 minutes. Deep-dive in 48 hours. Protect forever.
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed" style={{fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'}}>
+                <p className="text-xl text-gray-600 leading-relaxed">
                   Instant attack-surface scans for every company you touch, plus diligence-grade audits and continuous portfolio monitoring—no sales calls, no agents to install.
                 </p>
               </div>
@@ -179,13 +190,15 @@ export default function DealBrief() {
                   <div className="w-16 h-16 mx-auto mb-4 bg-[#003366] rounded-none flex items-center justify-center">
                     <CheckCircle className="h-8 w-8 text-white" />
                   </div>
-                  <CardTitle className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Free Threat Snapshot</CardTitle>
+                  <CardTitle className="text-2xl font-medium text-[#003366] mb-2">Free Threat Snapshot</CardTitle>
                   <p className="text-gray-600 text-lg">30-second sample report</p>
                 </CardHeader>
                 <CardContent className="px-8 pb-8">
                   <form className="space-y-5">
                     <div className="space-y-4">
+                      <label htmlFor="hero-domain" className="sr-only">Company domain</label>
                       <Input
+                        id="hero-domain"
                         placeholder="Enter a domain"
                         className="bg-gray-50 border-gray-400 h-12 text-base focus:border-[#003366] focus:ring-[#003366] rounded-sm"
                       />
@@ -193,7 +206,7 @@ export default function DealBrief() {
                     <Button
                       type="button"
                       onClick={() => scrollToSection("snapshot-form")}
-                      className="bg-[#003366] hover:bg-[#002244] text-white w-full h-12 text-base font-normal rounded-none shadow-sm hover:shadow-md transition-all duration-150 uppercase tracking-wide"
+                      className="btn-primary w-full h-12 text-base"
                     >
                       Run a Free Threat Snapshot
                     </Button>
@@ -225,18 +238,34 @@ export default function DealBrief() {
         </div>
       </section>
 
+      {/* Social Proof Strip */}
+      <section className="py-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center">
+            <div className="flex justify-center items-center space-x-8 mb-3">
+              <div className="text-xs text-gray-400 uppercase tracking-wide font-medium">BACKED BY XYZ VENTURES</div>
+              <div className="w-px h-4 bg-gray-300"></div>
+              <div className="text-xs text-gray-400 uppercase tracking-wide font-medium">USED BY ABC CAPITAL</div>
+              <div className="w-px h-4 bg-gray-300"></div>
+              <div className="text-xs text-gray-400 uppercase tracking-wide font-medium">TRUSTED BY DEF PARTNERS</div>
+            </div>
+            <p className="text-sm text-gray-500">Used by investors and operators across tech, healthcare and manufacturing.</p>
+          </div>
+        </div>
+      </section>
+
       {/* Problem Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>You're Evaluating Companies Blind</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">You're Evaluating Companies Blind</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center space-y-4">
               <div className="w-16 h-16 mx-auto bg-[#e8cfcf] rounded-none flex items-center justify-center">
                 <ShieldOff className="h-8 w-8 text-[#8b0000]" />
               </div>
-              <h3 className="text-xl font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Cyber breaches erase deal value overnight</h3>
+              <h3 className="text-xl font-medium text-[#003366]">Cyber breaches erase deal value overnight</h3>
               <p className="text-gray-600">
                 A single breach can destroy months of due diligence work and deal momentum.
               </p>
@@ -246,7 +275,7 @@ export default function DealBrief() {
               <div className="w-16 h-16 mx-auto bg-[#e8cfcf] rounded-none flex items-center justify-center">
                 <AlertCircle className="h-8 w-8 text-[#8b0000]" />
               </div>
-              <h3 className="text-xl font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Traditional diligence surfaces issues weeks too late</h3>
+              <h3 className="text-xl font-medium text-[#003366]">Traditional diligence surfaces issues weeks too late</h3>
               <p className="text-gray-600">
                 Often after term sheets are signed, when it's too costly to walk away.
               </p>
@@ -256,7 +285,7 @@ export default function DealBrief() {
               <div className="w-16 h-16 mx-auto bg-[#e8cfcf] rounded-none flex items-center justify-center">
                 <CheckCircle className="h-8 w-8 text-[#8b0000]" />
               </div>
-              <h3 className="text-xl font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+              <h3 className="text-xl font-medium text-[#003366]">
                 Manual approaches don't scale to hundreds of pitches
               </h3>
               <p className="text-gray-600">
@@ -271,7 +300,7 @@ export default function DealBrief() {
       <section id="how-it-works" className="py-20 bg-[#e8e8e8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>How It Works</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">How It Works</h2>
             <p className="text-xl text-gray-600">Three-step narrative</p>
           </div>
 
@@ -281,7 +310,7 @@ export default function DealBrief() {
                 1
               </div>
               <div>
-                <h3 className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Scout</h3>
+                <h3 className="text-2xl font-medium text-[#003366] mb-2">Scout</h3>
                 <p className="text-gray-600">Automated reconnaissance surfaces misconfigurations, leaked secrets and vulnerable sub-domains in under five minutes.</p>
                 <p className="text-sm text-[#2c5530] font-semibold mt-4">"Know in five." Drop high-risk targets before the partner meeting.</p>
               </div>
@@ -292,7 +321,7 @@ export default function DealBrief() {
                 2
               </div>
               <div>
-                <h3 className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deep Dive</h3>
+                <h3 className="text-2xl font-medium text-[#003366] mb-2">Deep Dive</h3>
                 <p className="text-gray-600">48-hour confirmatory audit covering 25+ vectors, financial impact modelling and remediation roadmap.</p>
                 <p className="text-sm text-[#2c5530] font-semibold mt-4">"No surprises at close." Full diligence mapped to EBITDA impact, delivered in 2 days.</p>
               </div>
@@ -303,7 +332,7 @@ export default function DealBrief() {
                 3
               </div>
               <div>
-                <h3 className="text-2xl font-normal text-[#003366] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Portfolio Protection</h3>
+                <h3 className="text-2xl font-medium text-[#003366] mb-2">Portfolio Protection</h3>
                 <p className="text-gray-600">Continuous monitoring of every portco with alerting, dashboards and quarterly board packs.</p>
                 <p className="text-sm text-[#2c5530] font-semibold mt-4">"Guard IRR long term." Continuous detection plus board-ready reporting.</p>
               </div>
@@ -313,10 +342,10 @@ export default function DealBrief() {
           <div className="text-center mt-12">
             <Button 
               onClick={() => scrollToSection("pricing")}
-              className="bg-[#003366] hover:bg-[#002244] text-white px-8 py-3 text-sm uppercase tracking-wide border-0 rounded-none focus:ring-2 focus:ring-[#003366] focus:ring-offset-2 transition-colors"
+              className="btn-primary px-8 py-3 text-sm focus:ring-2 focus:ring-[#E3B341] focus:ring-offset-2"
               aria-label="View our pricing options"
             >
-              See Pricing Options <ArrowRight className="ml-2 h-4 w-4" />
+              View Pricing <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
@@ -327,7 +356,7 @@ export default function DealBrief() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl font-normal text-white mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+              <h2 className="text-4xl font-medium text-white mb-4">
                 Enter a domain → Get instant Threat Snapshot
               </h2>
               <p className="text-[#c8d1dd] text-lg">
@@ -363,7 +392,7 @@ export default function DealBrief() {
                   type="submit"
                   size="lg"
                   disabled={isSubmitting}
-                  className="bg-[#2c5530] hover:bg-[#2c5530]/90 text-white px-12 py-4 text-lg w-full md:w-auto focus:ring-2 focus:ring-[#2c5530] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed rounded-none uppercase tracking-wide"
+                  className="btn-primary px-12 py-4 text-lg w-full md:w-auto focus:ring-2 focus:ring-[#E3B341] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
                   aria-label={isSubmitting ? 'Generating your snapshot, please wait' : 'Generate your free threat snapshot'}
                 >
                   {isSubmitting ? (
@@ -382,7 +411,7 @@ export default function DealBrief() {
             ) : (
               <div className="bg-[#d3e1d4] border border-[#2c5530] rounded-none p-8 max-w-2xl mx-auto">
                 <CheckCircle className="h-12 w-12 text-[#2c5530] mx-auto mb-4" />
-                <h3 className="text-2xl font-normal text-[#2c5530] mb-2" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Snapshot Requested!</h3>
+                <h3 className="text-2xl font-medium text-[#2c5530] mb-2">Snapshot Requested!</h3>
                 <p className="text-[#2c5530]">Report will arrive by email in ~5 min.</p>
               </div>
             )}
@@ -396,116 +425,185 @@ export default function DealBrief() {
       <section id="pricing" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Pricing</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">Pricing</h2>
             <p className="text-xl text-gray-600">Per-company, self-serve</p>
           </div>
 
           {/* Scout Tiers */}
           <div className="mb-16">
-            <h3 className="text-2xl font-normal text-[#003366] mb-8 text-center" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Scout Tiers</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-[#d4d4d4]">
-                <thead>
-                  <tr className="bg-[#fafafa]">
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Tier</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Coverage Ceiling</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Cadence</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deliverables</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Scout 10</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 10 companies/month</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Daily diff</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">15-factor red-flag matrix, cost exposure per issue<br/><em>All include plain-English fixes & Jira export</em></td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$199 / month</td>
-                  </tr>
-                  <tr className="bg-[#fafafa]">
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Scout 50</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 50 companies/month</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">4-hour diff</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$749 / month</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Scout 150</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 150 companies/month</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">30-min diff</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$1,499 / month</td>
-                  </tr>
-                </tbody>
-              </table>
+            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Scout Tiers</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
+                <CardHeader className="bg-[#fafafa] pb-4">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Scout 10</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$199<span className="text-lg font-medium">/month</span></div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">Up to 10 companies/month</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
+                    <p className="text-gray-600">Daily diff</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">15-factor red-flag matrix, cost exposure per issue</p>
+                    <p className="text-sm text-gray-500 italic">All include plain-English fixes & Jira export</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Scout 10</Button>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-[#E3B341] rounded-lg overflow-hidden relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-[#E3B341] text-[#1a1a1a] px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+                </div>
+                <CardHeader className="bg-[#fafafa] pb-4 pt-6">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Scout 50</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$749<span className="text-lg font-medium">/month</span></div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">Up to 50 companies/month</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
+                    <p className="text-gray-600">4-hour diff</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">15-factor red-flag matrix, cost exposure per issue</p>
+                    <p className="text-sm text-gray-500 italic">All include plain-English fixes & Jira export</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Scout 50</Button>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
+                <CardHeader className="bg-[#fafafa] pb-4">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Scout 150</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$1,499<span className="text-lg font-medium">/month</span></div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">Up to 150 companies/month</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
+                    <p className="text-gray-600">30-min diff</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">15-factor red-flag matrix, cost exposure per issue</p>
+                    <p className="text-sm text-gray-500 italic">All include plain-English fixes & Jira export</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Scout 150</Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
           {/* Deep Dive */}
           <div className="mb-16">
-            <h3 className="text-2xl font-normal text-[#003366] mb-8 text-center" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deep Dive</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-[#d4d4d4]">
-                <thead>
-                  <tr className="bg-[#fafafa]">
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Tier</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Coverage Ceiling</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Cadence</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deliverables</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Deep Dive</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">1 company</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">48-hour turnaround</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">25+-vector audit, remediation roadmap, XLS/PDF board pack</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$3,997 one-time</td>
-                  </tr>
-                </tbody>
-              </table>
+            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Deep Dive</h3>
+            <div className="max-w-2xl mx-auto">
+              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
+                <CardHeader className="bg-[#fafafa] pb-4">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Deep Dive</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$3,997<span className="text-lg font-medium"> one-time</span></div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">1 company</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Turnaround</h4>
+                    <p className="text-gray-600">48-hour delivery</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">25+-vector audit, remediation roadmap, XLS/PDF board pack</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Deep Dive</Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
           {/* Portfolio Protection */}
           <div className="mb-16">
-            <h3 className="text-2xl font-normal text-[#003366] mb-8 text-center" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Portfolio Protection</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-[#d4d4d4]">
-                <thead>
-                  <tr className="bg-[#fafafa]">
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Tier</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Companies Monitored</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-center text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Cadence</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Deliverables</th>
-                    <th className="border border-[#d4d4d4] px-6 py-4 text-right text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Portfolio 10</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 10 portcos</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Continuous + Q-brief</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">24×7 scans, alerting, quarterly board deck</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$2,000 / month</td>
-                  </tr>
-                  <tr className="bg-[#fafafa]">
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Portfolio 50</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 50 portcos</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Continuous + Q-brief</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$5,000 / month</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-[#d4d4d4] px-6 py-4 font-normal text-[#003366]">Portfolio 150</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Up to 150 portcos</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-center">Continuous + Q-brief</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Same as above</td>
-                    <td className="border border-[#d4d4d4] px-6 py-4 text-right font-normal text-[#003366]">$10,000 / month</td>
-                  </tr>
-                </tbody>
-              </table>
+            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Portfolio Protection</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
+                <CardHeader className="bg-[#fafafa] pb-4">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 10</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$2,000<span className="text-lg font-medium">/month</span></div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">Up to 10 portcos</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
+                    <p className="text-gray-600">Continuous + Q-brief</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">24×7 scans, alerting, quarterly board deck</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Portfolio 10</Button>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
+                <CardHeader className="bg-[#fafafa] pb-4">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 50</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$5,000<span className="text-lg font-medium">/month</span></div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">Up to 50 portcos</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
+                    <p className="text-gray-600">Continuous + Q-brief</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">24×7 scans, alerting, quarterly board deck</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Portfolio 50</Button>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
+                <CardHeader className="bg-[#fafafa] pb-4">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 150</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$10,000<span className="text-lg font-medium">/month</span></div>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">Up to 150 portcos</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
+                    <p className="text-gray-600">Continuous + Q-brief</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">24×7 scans, alerting, quarterly board deck</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Portfolio 150</Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -515,15 +613,15 @@ export default function DealBrief() {
       <section className="py-20 bg-[#e8e8e8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Competitive Advantage</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">Competitive Advantage</h2>
           </div>
 
           <div className="overflow-x-auto mb-12">
             <table className="w-full border-collapse border border-[#d4d4d4]">
               <thead>
                 <tr className="bg-[#fafafa]">
-                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>DealBrief</th>
-                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-normal" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>UpGuard</th>
+                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-medium">DealBrief</th>
+                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-medium">UpGuard</th>
                 </tr>
               </thead>
               <tbody>
@@ -560,94 +658,63 @@ export default function DealBrief() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Trust Signals</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">Trust Signals</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white border border-[#d4d4d4] rounded-none">
-              <CardContent className="p-8">
-                <p className="text-gray-600 mb-6 italic">
-                  "We scanned fifty seed-stage pitches with Scout, surfaced three sleepers, and dropped five high-risk deals before partner meeting."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
-                  <div>
-                    <p className="font-normal text-[#003366]">Managing Partner</p>
-                    <p className="text-sm text-gray-600">Early-Stage VC</p>
-                  </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white border-l-4 border-[#E3B341] p-8 rounded-none shadow-sm">
+              <blockquote className="text-gray-600 mb-6 italic text-lg leading-relaxed">
+                "We scanned fifty seed-stage pitches with Scout, surfaced three sleepers, and dropped five high-risk deals before partner meeting."
+              </blockquote>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
+                <div>
+                  <p className="font-medium text-[#003366]">Managing Partner</p>
+                  <p className="text-sm text-gray-600">Early-Stage VC</p>
                 </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white border border-[#d4d4d4] rounded-none">
-              <CardContent className="p-8">
-                <p className="text-gray-600 mb-6 italic">
-                  "DealBrief's Deep Dive cut our acquisition price by $2M after exposing credentials for sale on the dark web."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
-                  <div>
-                    <p className="font-normal text-[#003366]">VP Corporate Development</p>
-                    <p className="text-sm text-gray-600">Private Equity</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white border border-[#d4d4d4] rounded-none">
-              <CardContent className="p-8">
-                <p className="text-gray-600 mb-6 italic">
-                  "Quarterly Portfolio Protection caught an exposed S3 bucket and prevented a $4.88M breach."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
-                  <div>
-                    <p className="font-normal text-[#003366]">CISO</p>
-                    <p className="text-sm text-gray-600">Growth-Equity Fund</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof Strip */}
-      <section className="py-12 bg-[#e8e8e8] border-t border-b border-[#d4d4d4]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex justify-center items-center space-x-12 mb-4">
-              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
-                SEED VC
-              </div>
-              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
-                GROWTH PE
-              </div>
-              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
-                EARLY VC
-              </div>
-              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
-                TECH SMB
-              </div>
-              <div className="w-24 h-12 bg-gray-300 rounded-none flex items-center justify-center text-xs text-gray-600">
-                HEALTHCARE
               </div>
             </div>
-            <p className="text-sm text-gray-500">Used by investors and operators across tech, healthcare and manufacturing.</p>
+
+            <div className="bg-white border-l-4 border-[#E3B341] p-8 rounded-none shadow-sm md:mt-8">
+              <blockquote className="text-gray-600 mb-6 italic text-lg leading-relaxed">
+                "DealBrief's Deep Dive cut our acquisition price by $2M after exposing credentials for sale on the dark web."
+              </blockquote>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
+                <div>
+                  <p className="font-medium text-[#003366]">VP Corporate Development</p>
+                  <p className="text-sm text-gray-600">Private Equity</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-l-4 border-[#E3B341] p-8 rounded-none shadow-sm md:-mt-4">
+              <blockquote className="text-gray-600 mb-6 italic text-lg leading-relaxed">
+                "Quarterly Portfolio Protection caught an exposed S3 bucket and prevented a $4.88M breach."
+              </blockquote>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
+                <div>
+                  <p className="font-medium text-[#003366]">CISO</p>
+                  <p className="text-sm text-gray-600">Growth-Equity Fund</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* FAQ */}
       <section id="faq" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-[#003366] mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Frequently asked questions</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">Frequently asked questions</h2>
           </div>
 
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border border-[#d4d4d4] rounded-none px-6">
-              <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+              <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
                 How does Scout count a "company"?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
@@ -656,7 +723,7 @@ export default function DealBrief() {
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border border-[#d4d4d4] rounded-none px-6">
-              <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+              <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
                 Is any agent or credential required?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
@@ -665,7 +732,7 @@ export default function DealBrief() {
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border border-[#d4d4d4] rounded-none px-6">
-              <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+              <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
                 Can I upgrade tiers mid-cycle?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
@@ -674,7 +741,7 @@ export default function DealBrief() {
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border border-[#d4d4d4] rounded-none px-6">
-              <AccordionTrigger className="text-left text-lg font-normal text-[#003366]" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>
+              <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
                 What's the SLA for critical alerts?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
@@ -690,7 +757,7 @@ export default function DealBrief() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-normal mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Product</h3>
+              <h3 className="text-lg font-medium mb-4">Product</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="#" className="text-[#c8d1dd] hover:text-white transition-colors hover:underline">
@@ -716,7 +783,7 @@ export default function DealBrief() {
             </div>
 
             <div>
-              <h3 className="text-lg font-normal mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Use Cases</h3>
+              <h3 className="text-lg font-medium mb-4">Use Cases</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="#" className="text-[#c8d1dd] hover:text-white transition-colors hover:underline">
@@ -742,7 +809,7 @@ export default function DealBrief() {
             </div>
 
             <div>
-              <h3 className="text-lg font-normal mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Legal</h3>
+              <h3 className="text-lg font-medium mb-4">Legal</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="#" className="text-[#c8d1dd] hover:text-white transition-colors hover:underline">
@@ -763,7 +830,7 @@ export default function DealBrief() {
             </div>
 
             <div>
-              <h3 className="text-lg font-normal mb-4" style={{fontFamily: 'Georgia, "Times New Roman", serif'}}>Contact</h3>
+              <h3 className="text-lg font-medium mb-4">Contact</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="mailto:hello@dealbrief.com" className="text-[#c8d1dd] hover:text-white transition-colors hover:underline">

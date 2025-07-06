@@ -6,16 +6,17 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SimplCyber - Simplified Cybersecurity for Small Businesses",
+  title: "DealBrief - Scout in 5 minutes. Deep-dive in 48 hours. Protect forever.",
   description:
-    "Only platform that converts every risk into concrete costs so you can act in minutes. Get your free risk snapshot in 5 minutes.",
-  keywords: "cybersecurity, small business, risk assessment, security audit, cyber risk",
-  authors: [{ name: "SimplCyber" }],
+    "Instant attack-surface scans for every company you touch, plus diligence-grade audits and continuous portfolio monitoring—no sales calls, no agents to install.",
+  keywords: "cyber risk, due diligence, VC, private equity, M&A, portfolio monitoring, threat assessment, dealbrief.io",
+  authors: [{ name: "DealBrief" }],
   viewport: "width=device-width, initial-scale=1",
   openGraph: {
-    title: "SimplCyber - Simplified Cybersecurity for Small Businesses",
-    description: "Only platform that converts every risk into concrete costs so you can act in minutes.",
+    title: "DealBrief - Scout in 5 minutes. Deep-dive in 48 hours. Protect forever.",
+    description: "Instant attack-surface scans for every company you touch, plus diligence-grade audits and continuous portfolio monitoring.",
     type: "website",
+    url: "https://dealbrief.io",
   },
   generator: 'v0.dev'
 }
