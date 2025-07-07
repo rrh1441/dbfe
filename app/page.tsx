@@ -145,10 +145,10 @@ export default function DealBrief() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-medium text-[#003366] leading-tight">
-                  Know if your next investment has security problems before they tank your returns.
+                  Spot security landmines before they blow up your return.
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Smart investors check for security holes before writing checks. Now you can too—in 5 minutes, without hiring consultants.
+                  Scan any company in <strong>five minutes</strong>; get a 48-hour audit when deeper diligence matters.
                 </p>
               </div>
             </div>
@@ -161,13 +161,13 @@ export default function DealBrief() {
                     <CheckCircle className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-medium text-[#003366] mb-2">Free Threat Snapshot</CardTitle>
-                  <p className="text-gray-600 text-lg">Real security issues in 5 minutes</p>
+                  <p className="text-gray-600 text-lg">Real issues in 5 min</p>
                 </CardHeader>
                 <CardContent className="px-8 pb-8">
                   <form className="space-y-5">
                     <div className="space-y-4">
                       <Input
-                        placeholder="Enter target company's domain"
+                        placeholder="Domain"
                         className="bg-gray-50 border-gray-400 h-12 text-base focus:border-[#003366] focus:ring-[#003366] rounded-sm"
                       />
                     </div>
@@ -176,11 +176,11 @@ export default function DealBrief() {
                       onClick={() => scrollToSection("snapshot-form")}
                       className="btn-primary w-full h-12 text-base"
                     >
-                      Run a Free Threat Snapshot
+                      Run Snapshot
                     </Button>
                   </form>
                   <div className="mt-6 pt-6 border-t border-gray-100">
-                    <p className="text-sm text-gray-500 text-center">Join 100+ investors who check every deal</p>
+                    <p className="text-sm text-gray-500 text-center">Trusted by 100+ investors</p>
                   </div>
                 </CardContent>
               </Card>
@@ -193,16 +193,16 @@ export default function DealBrief() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-medium text-[#003366] mb-4">You're investing in companies with fixable problems you can't see</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">You're flying blind on security risk</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center space-y-4">
               <div className="w-16 h-16 mx-auto bg-[#e8cfcf] rounded-none flex items-center justify-center">
                 <ShieldOff className="h-8 w-8 text-[#8b0000]" />
               </div>
-              <h3 className="text-xl font-medium text-[#003366]">That promising SaaS company? Their customer data is exposed.</h3>
+              <h3 className="text-xl font-medium text-[#003366]">Hidden breach = lost EBITDA.</h3>
               <p className="text-gray-600">
-                One preventable breach can wipe out years of growth. The fix usually costs less than their monthly AWS bill.
+                One avoidable leak can gut valuation.
               </p>
             </div>
 
@@ -210,9 +210,9 @@ export default function DealBrief() {
               <div className="w-16 h-16 mx-auto bg-[#e8cfcf] rounded-none flex items-center justify-center">
                 <AlertCircle className="h-8 w-8 text-[#8b0000]" />
               </div>
-              <h3 className="text-xl font-medium text-[#003366]">Security audits are slow and expensive overkill</h3>
+              <h3 className="text-xl font-medium text-[#003366]">Traditional audits crawl.</h3>
               <p className="text-gray-600">
-                You don't need a 200-page pentest for a Series A startup. You need to know if they have basic security hygiene.
+                Weeks to deliver, five-figure bills.
               </p>
             </div>
 
@@ -221,10 +221,10 @@ export default function DealBrief() {
                 <CheckCircle className="h-8 w-8 text-[#8b0000]" />
               </div>
               <h3 className="text-xl font-medium text-[#003366]">
-                Your portfolio companies are targets you can't see
+                Hackers move faster than your portfolio.
               </h3>
               <p className="text-gray-600">
-                While you're focused on growth metrics, hackers are finding the same security holes we would. They just get there first.
+                They find gaps first—unless you check now.
               </p>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function DealBrief() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-medium text-[#003366] mb-4">How It Works</h2>
-            <p className="text-xl text-gray-600">Three simple ways to protect your investments</p>
+            <p className="text-xl text-gray-600">3-step protection</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
@@ -245,9 +245,9 @@ export default function DealBrief() {
                 1
               </div>
               <div>
-                <h3 className="text-2xl font-medium text-[#003366] mb-2">Scout</h3>
-                <p className="text-gray-600">Drop in any website. In 5 minutes, see exposed databases, leaked passwords, and basic security mistakes. Most issues take a developer one day to fix.</p>
-                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Check every deal now. Saved us from two disasters." - Small PE Partner</p>
+                <h3 className="text-2xl font-medium text-[#003366] mb-2">Scout (5 min)</h3>
+                <p className="text-gray-600">Paste a domain and see exposed data, leaked creds, and quick wins.</p>
+                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Saved us from two disasters." - Small PE Partner</p>
               </div>
             </div>
 
@@ -256,9 +256,9 @@ export default function DealBrief() {
                 2
               </div>
               <div>
-                <h3 className="text-2xl font-medium text-[#003366] mb-2">Deep Dive</h3>
-                <p className="text-gray-600">Found a great company? Get a complete 48-hour audit that shows exactly what needs fixing and how much it costs. Use it in negotiations or help them fix it post-close.</p>
-                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Found $50k of fixes needed. Negotiated $300k off." - Business Broker</p>
+                <h3 className="text-2xl font-medium text-[#003366] mb-2">Deep Dive (48 h)</h3>
+                <p className="text-gray-600">Full 25-point audit, fix list, and cost to remediate—ready for negotiations.</p>
+                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Found $50k fixes, negotiated $300k off." - Business Broker</p>
               </div>
             </div>
 
@@ -268,8 +268,8 @@ export default function DealBrief() {
               </div>
               <div>
                 <h3 className="text-2xl font-medium text-[#003366] mb-2">Portfolio Protection</h3>
-                <p className="text-gray-600">Monitor all your investments for new security issues. Get alerts before problems become breaches, plus simple quarterly reports that boards actually understand.</p>
-                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Caught exposed API keys. Fixed in an afternoon." - VC Partner</p>
+                <p className="text-gray-600">24×7 watch, instant alerts, and plain-English quarterly briefs.</p>
+                <p className="text-sm text-[#2c5530] font-semibold mt-4">"Caught exposed API keys in an afternoon." - VC Partner</p>
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@ export default function DealBrief() {
                 <div className="grid md:grid-cols-1 gap-4">
                   <div>
                     <Input
-                      placeholder="Enter target company's domain"
+                      placeholder="Domain"
                       value={formData.domain}
                       onChange={(e) => handleInputChange('domain', e.target.value)}
                       required
@@ -331,7 +331,7 @@ export default function DealBrief() {
                     </>
                   ) : (
                     <>
-                      Run a Free Threat Snapshot
+                      Run Snapshot
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </>
                   )}
@@ -366,6 +366,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Scout 10</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$199<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">≈ $0.66/scan</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -391,6 +392,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4 pt-6">
                   <CardTitle className="text-xl font-medium text-[#003366]">Scout 50</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$749<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Most popular</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -413,6 +415,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Scout 150</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$1,499<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Scale funds</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -441,6 +444,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Deep Dive</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$3,997<span className="text-lg font-medium"> one-time</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Audit + roadmap</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -469,6 +473,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 10</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$2,000<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Protect IRR</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -477,7 +482,7 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Continuous + Q-brief</p>
+                    <p className="text-gray-600">Always-on</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
@@ -491,6 +496,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 50</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$5,000<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Protect IRR</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -499,7 +505,7 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Continuous + Q-brief</p>
+                    <p className="text-gray-600">Always-on</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
@@ -513,6 +519,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 150</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$10,000<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Protect IRR</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -521,7 +528,7 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Continuous + Q-brief</p>
+                    <p className="text-gray-600">Always-on</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
@@ -539,7 +546,7 @@ export default function DealBrief() {
       <section className="py-20 bg-[#e8e8e8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-medium text-[#003366] mb-4">Built for dealmakers, not IT departments</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">DealBrief vs UpGuard</h2>
           </div>
 
           <div className="overflow-x-auto mb-12">
@@ -552,23 +559,23 @@ export default function DealBrief() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Plain English anyone can understand</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Technical security jargon</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Plain English findings</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Jargon-heavy PDFs</td>
                 </tr>
                 <tr className="bg-[#fafafa]">
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Dollar amounts for each fix</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Abstract risk scores only</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Dollar cost per fix</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Abstract risk scores</td>
                 </tr>
                 <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Sign up in 60 seconds online</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Enterprise sales process</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">60-second signup</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Sales calls required</td>
                 </tr>
                 <tr className="bg-[#fafafa]">
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Reports built for negotiations</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Compliance-focused output</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Negotiation-ready reports</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Compliance focus</td>
                 </tr>
                 <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Transparent per-company pricing</td>
+                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Transparent pricing</td>
                   <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Call-for-quote pricing</td>
                 </tr>
               </tbody>
@@ -577,9 +584,9 @@ export default function DealBrief() {
 
           <div className="bg-white border border-[#d4d4d4] p-8 rounded-none">
             <blockquote className="text-lg text-gray-600 italic mb-4">
-              "UpGuard wanted $20k/year minimum and spoke only in acronyms. DealBrief costs less and actually helps us make decisions."
+              "UpGuard quoted $20k/year and spoke in acronyms. DealBrief cost less and drove the price down $300k."
             </blockquote>
-            <cite className="text-sm text-gray-500">Real customer feedback</cite>
+            <cite className="text-sm text-gray-500">— Business Broker</cite>
           </div>
         </div>
       </section>
@@ -588,45 +595,42 @@ export default function DealBrief() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-medium text-[#003366] mb-4">Real results from real investors</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">Trusted Results</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white border-l-4 border-[#E3B341] p-8 rounded-none shadow-sm">
               <blockquote className="text-gray-600 mb-6 italic text-lg leading-relaxed">
-                "Run Scout on every new deal. Takes 5 minutes. Found exposed customer data twice this month—both companies fixed it immediately."
+                "Scout caught exposed customer data twice this month—both fixed same day."
               </blockquote>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
                 <div>
-                  <p className="font-medium text-[#003366]">Managing Partner</p>
-                  <p className="text-sm text-gray-600">Small Growth Fund</p>
+                  <p className="font-medium text-[#003366]">Small PE Partner</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-white border-l-4 border-[#E3B341] p-8 rounded-none shadow-sm md:mt-8">
               <blockquote className="text-gray-600 mb-6 italic text-lg leading-relaxed">
-                "Deep Dive found passwords for sale on the dark web. Saved our client from buying a ticking time bomb."
+                "Deep Dive found dark-web passwords; we walked from a ticking bomb."
               </blockquote>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
                 <div>
-                  <p className="font-medium text-[#003366]">VP Corporate Development</p>
-                  <p className="text-sm text-gray-600">Lower Middle Market PE</p>
+                  <p className="font-medium text-[#003366]">Corp Dev VP</p>
                 </div>
               </div>
             </div>
 
             <div className="bg-white border-l-4 border-[#E3B341] p-8 rounded-none shadow-sm md:-mt-4">
               <blockquote className="text-gray-600 mb-6 italic text-lg leading-relaxed">
-                "Portfolio Protection caught an open database before hackers did. That alert saved a $10M investment."
+                "Portfolio alert saved a $10M position by flagging an open DB."
               </blockquote>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-[#e8e8e8] rounded-none mr-4"></div>
                 <div>
-                  <p className="font-medium text-[#003366]">CISO</p>
-                  <p className="text-sm text-gray-600">Micro-VC Fund</p>
+                  <p className="font-medium text-[#003366]">Micro-VC CISO</p>
                 </div>
               </div>
             </div>
@@ -638,61 +642,43 @@ export default function DealBrief() {
       <section id="faq" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-medium text-[#003366] mb-4">Frequently asked questions</h2>
+            <h2 className="text-4xl font-medium text-[#003366] mb-4">FAQ</h2>
           </div>
 
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
-                How does Scout count a "company"?
+                What counts as a company?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                One business and all their domains. If they own multiple separate companies, those count individually.
+                One business, all its domains.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
-                Is any agent or credential required?
+                Do you need access?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                No. Everything runs externally—just like hackers scan. Zero impact on their systems.
+                No credentials, zero system impact—just like attackers. Critical alerts under 15 minutes.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
-                Can I upgrade tiers mid-cycle?
+                Can I upgrade anytime?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                Yes. Upgrade anytime and we'll prorate it instantly.
+                Yes—prorated immediately.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="border border-[#d4d4d4] rounded-none px-6">
               <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
-                What's the SLA for critical alerts?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 pt-4">
-                Email alerts in under 15 minutes for critical issues. Support responds within 2 hours during business hours.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5" className="border border-[#d4d4d4] rounded-none px-6">
-              <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
                 Is this legal?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                Yes. Our service performs external, non-intrusive scanning, similar to how search engines index websites or how security researchers (and hackers) find vulnerabilities. We do not access any private systems or require credentials.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="border border-[#d4d4d4] rounded-none px-6">
-              <AccordionTrigger className="text-left text-lg font-medium text-[#003366]">
-                How is this different from a full penetration test (pentest)?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-600 pt-4">
-                Our 'Scout' and 'Portfolio Protection' services are designed for speed and identifying the 'low-hanging fruit'—common, high-risk issues that don't require deep manual testing. Our 'Deep Dive' is a more comprehensive audit, but still faster and more focused on business risk than a traditional, months-long pentest. We help you decide if you even need a full pentest.
+                Yes. External scanning only—similar to how search engines or security researchers find vulnerabilities.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
