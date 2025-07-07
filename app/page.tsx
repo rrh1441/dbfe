@@ -145,10 +145,10 @@ export default function DealBrief() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-medium text-[#003366] leading-tight">
-                  Spot security landmines before they blow up your return.
+                  Spot security landmines before they blow up your returns
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Scan any company in <strong>five minutes</strong>; get a 48-hour audit when deeper diligence matters.
+                  Scan any company in <strong>five minutes</strong>; get a 48-hour audit when deeper diligence matters
                 </p>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function DealBrief() {
               </div>
               <div>
                 <h3 className="text-2xl font-medium text-[#003366] mb-2">Scout (5 min)</h3>
-                <p className="text-gray-600">Paste a domain and see exposed data, leaked creds, and quick wins.</p>
+                <p className="text-gray-600">Paste a domain and see risk scores, severity levels, and security categories to gauge overall risk.</p>
                 <p className="text-sm text-[#2c5530] font-semibold mt-4">"Saved us from two disasters." - Small PE Partner</p>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function DealBrief() {
               </div>
               <div>
                 <h3 className="text-2xl font-medium text-[#003366] mb-2">Deep Dive (48 h)</h3>
-                <p className="text-gray-600">Full 25-point audit, fix list, and cost to remediate—ready for negotiations.</p>
+                <p className="text-gray-600">Full 25-point audit with detailed remediation plan and fix costs—ready for negotiations.</p>
                 <p className="text-sm text-[#2c5530] font-semibold mt-4">"Found $50k fixes, negotiated $300k off." - Business Broker</p>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function DealBrief() {
               </div>
               <div>
                 <h3 className="text-2xl font-medium text-[#003366] mb-2">Portfolio Protection</h3>
-                <p className="text-gray-600">24×7 watch, instant alerts, and plain-English quarterly briefs.</p>
+                <p className="text-gray-600">Regular portfolio scans with quarterly risk reports.</p>
                 <p className="text-sm text-[#2c5530] font-semibold mt-4">"Caught exposed API keys in an afternoon." - VC Partner</p>
               </div>
             </div>
@@ -379,7 +379,7 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">Plain-English findings, cost to fix each issue, one-click export</p>
+                    <p className="text-gray-600">Risk scores, severity levels, security categories, one-click export</p>
                   </div>
                   <Button className="btn-primary w-full mt-4">Get Scout 10</Button>
                 </CardContent>
@@ -405,7 +405,7 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">Plain-English findings, cost to fix each issue, one-click export</p>
+                    <p className="text-gray-600">Risk scores, severity levels, security categories, one-click export</p>
                   </div>
                   <Button className="btn-primary w-full mt-4">Get Scout 50</Button>
                 </CardContent>
@@ -428,7 +428,7 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">Plain-English findings, cost to fix each issue, one-click export</p>
+                    <p className="text-gray-600">Risk scores, severity levels, security categories, one-click export</p>
                   </div>
                   <Button className="btn-primary w-full mt-4">Get Scout 150</Button>
                 </CardContent>
@@ -457,7 +457,7 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">25+ checks, remediation roadmap with costs, negotiation-ready report</p>
+                    <p className="text-gray-600">25+ checks, detailed remediation roadmap with costs, negotiation-ready report</p>
                   </div>
                   <Button className="btn-primary w-full mt-4">Get Deep Dive</Button>
                 </CardContent>
@@ -482,11 +482,11 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Always-on</p>
+                    <p className="text-gray-600">Daily scans</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">24×7 monitoring, instant alerts, quarterly summaries</p>
+                    <p className="text-gray-600">Risk monitoring, quarterly reports</p>
                   </div>
                   <Button className="btn-primary w-full mt-4">Get Portfolio 10</Button>
                 </CardContent>
@@ -505,11 +505,11 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Always-on</p>
+                    <p className="text-gray-600">Daily scans</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">24×7 monitoring, instant alerts, quarterly summaries</p>
+                    <p className="text-gray-600">Risk monitoring, quarterly reports</p>
                   </div>
                   <Button className="btn-primary w-full mt-4">Get Portfolio 50</Button>
                 </CardContent>
@@ -528,11 +528,11 @@ export default function DealBrief() {
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Always-on</p>
+                    <p className="text-gray-600">Daily scans</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">24×7 monitoring, instant alerts, quarterly summaries</p>
+                    <p className="text-gray-600">Risk monitoring, quarterly reports</p>
                   </div>
                   <Button className="btn-primary w-full mt-4">Get Portfolio 150</Button>
                 </CardContent>
@@ -542,54 +542,6 @@ export default function DealBrief() {
         </div>
       </section>
 
-      {/* Competitive Advantage */}
-      <section className="py-20 bg-[#e8e8e8]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-medium text-[#003366] mb-4">DealBrief vs UpGuard</h2>
-          </div>
-
-          <div className="overflow-x-auto mb-12">
-            <table className="w-full border-collapse border border-[#d4d4d4]">
-              <thead>
-                <tr className="bg-[#fafafa]">
-                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-medium">DealBrief</th>
-                  <th className="border border-[#d4d4d4] px-6 py-4 text-left text-[#003366] font-medium">UpGuard</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Plain English findings</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Jargon-heavy PDFs</td>
-                </tr>
-                <tr className="bg-[#fafafa]">
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Dollar cost per fix</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Abstract risk scores</td>
-                </tr>
-                <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">60-second signup</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Sales calls required</td>
-                </tr>
-                <tr className="bg-[#fafafa]">
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Negotiation-ready reports</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Compliance focus</td>
-                </tr>
-                <tr>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Transparent pricing</td>
-                  <td className="border border-[#d4d4d4] px-6 py-4 text-gray-600">Call-for-quote pricing</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="bg-white border border-[#d4d4d4] p-8 rounded-none">
-            <blockquote className="text-lg text-gray-600 italic mb-4">
-              "UpGuard quoted $20k/year and spoke in acronyms. DealBrief cost less and drove the price down $300k."
-            </blockquote>
-            <cite className="text-sm text-gray-500">— Business Broker</cite>
-          </div>
-        </div>
-      </section>
 
       {/* Trust Signals */}
       <section className="py-20 bg-white">
