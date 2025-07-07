@@ -11,7 +11,6 @@ export const metadata: Metadata = {
     "Instant attack-surface scans for every company you touch, plus diligence-grade audits and continuous portfolio monitoring—no sales calls, no agents to install.",
   keywords: "cyber risk, due diligence, VC, private equity, M&A, portfolio monitoring, threat assessment, dealbrief.io",
   authors: [{ name: "DealBrief" }],
-  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "DealBrief - Scout in 5 minutes. Deep-dive in 48 hours. Protect forever.",
     description: "Instant attack-surface scans for every company you touch, plus diligence-grade audits and continuous portfolio monitoring.",
@@ -19,6 +18,11 @@ export const metadata: Metadata = {
     url: "https://dealbrief.io",
   },
   generator: 'v0.dev'
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 }
 
 export default function RootLayout({

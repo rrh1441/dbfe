@@ -1,8 +1,6 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -745,7 +743,7 @@ export default function DealBrief() {
                 What's the SLA for critical alerts?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pt-4">
-                Email push < 15 minutes, 8 × 5 support < 2 hours.
+                Email push under 15 minutes, 8 × 5 support under 2 hours.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
