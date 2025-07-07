@@ -399,8 +399,8 @@ export default function DealBrief() {
                     <p className="text-gray-600">Up to 10 companies/month</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Daily scans</p>
+                    <h4 className="font-medium text-[#003366] mb-1">Usage</h4>
+                    <p className="text-gray-600">One-time scans per company</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
@@ -425,8 +425,8 @@ export default function DealBrief() {
                     <p className="text-gray-600">Up to 50 companies/month</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Scans every 4 hours</p>
+                    <h4 className="font-medium text-[#003366] mb-1">Usage</h4>
+                    <p className="text-gray-600">One-time scans per company</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
@@ -448,8 +448,8 @@ export default function DealBrief() {
                     <p className="text-gray-600">Up to 150 companies/month</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Scans every 30 minutes</p>
+                    <h4 className="font-medium text-[#003366] mb-1">Usage</h4>
+                    <p className="text-gray-600">One-time scans per company</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
