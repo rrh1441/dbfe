@@ -355,18 +355,43 @@ export default function DealBrief() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-medium text-[#003366] mb-4">Pricing</h2>
-            <p className="text-xl text-gray-600">Per-company, self-serve</p>
+            <p className="text-xl text-gray-600">Start free. Pay only when you need more.</p>
+          </div>
+
+          {/* Free Security Check */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Free Security Check</h3>
+            <div className="max-w-2xl mx-auto">
+              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
+                <CardHeader className="bg-[#fafafa] pb-4">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Free Check</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$0</div>
+                  <p className="text-sm text-gray-500 mt-1">Perfect for testing us out</p>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">1 security check, 1 domain</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">Risk report with severity levels, estimated loss calculation</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Free Check</Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
 
           {/* Scout Tiers */}
           <div className="mb-16">
-            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Scout Tiers</h3>
+            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Deal Screening</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Scout 10</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$199<span className="text-lg font-medium">/month</span></div>
-                  <p className="text-sm text-gray-500 mt-1">≈ $0.66/scan</p>
+                  <p className="text-sm text-gray-500 mt-1">Light prospecting</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -392,7 +417,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4 pt-6">
                   <CardTitle className="text-xl font-medium text-[#003366]">Scout 50</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$749<span className="text-lg font-medium">/month</span></div>
-                  <p className="text-sm text-gray-500 mt-1">Most popular</p>
+                  <p className="text-sm text-gray-500 mt-1">Steady deal flow</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -415,7 +440,7 @@ export default function DealBrief() {
                 <CardHeader className="bg-[#fafafa] pb-4">
                   <CardTitle className="text-xl font-medium text-[#003366]">Scout 150</CardTitle>
                   <div className="text-3xl font-bold text-[#003366] mt-2">$1,499<span className="text-lg font-medium">/month</span></div>
-                  <p className="text-sm text-gray-500 mt-1">Scale funds</p>
+                  <p className="text-sm text-gray-500 mt-1">High-volume sourcing</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
@@ -436,105 +461,112 @@ export default function DealBrief() {
             </div>
           </div>
 
-          {/* Deep Dive */}
+          {/* Deep Security Assessment */}
           <div className="mb-16">
-            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Deep Dive</h3>
+            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Due Diligence Deep Dive</h3>
             <div className="max-w-2xl mx-auto">
               <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
                 <CardHeader className="bg-[#fafafa] pb-4">
-                  <CardTitle className="text-xl font-medium text-[#003366]">Deep Dive</CardTitle>
-                  <div className="text-3xl font-bold text-[#003366] mt-2">$3,997<span className="text-lg font-medium"> one-time</span></div>
-                  <p className="text-sm text-gray-500 mt-1">Audit + roadmap</p>
+                  <CardTitle className="text-xl font-medium text-[#003366]">Deep Security Assessment</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$999<span className="text-lg font-medium"> one-time</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Serious security review for diligence</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
-                    <p className="text-gray-600">1 company</p>
+                    <p className="text-gray-600">1 domain (additional domains +$499 each)</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Turnaround</h4>
-                    <p className="text-gray-600">48-hour delivery</p>
+                    <p className="text-gray-600">Comprehensive 48-hour review</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">25+ checks, detailed remediation roadmap with costs, negotiation-ready report</p>
+                    <p className="text-gray-600">25+ security vectors, executive summary, detailed remediation plan, post-fix re-scan included</p>
                   </div>
-                  <Button className="btn-primary w-full mt-4">Get Deep Dive</Button>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Optional Add-on</h4>
+                    <p className="text-gray-600">1-hour consulting call +$499</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Deep Assessment</Button>
                 </CardContent>
               </Card>
             </div>
           </div>
 
-          {/* Portfolio Protection */}
+          {/* Portfolio Monitoring */}
           <div className="mb-16">
-            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Portfolio Protection</h3>
+            <h3 className="text-2xl font-medium text-[#003366] mb-8 text-center">Portfolio Monitoring</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
                 <CardHeader className="bg-[#fafafa] pb-4">
-                  <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 10</CardTitle>
-                  <div className="text-3xl font-bold text-[#003366] mt-2">$2,000<span className="text-lg font-medium">/month</span></div>
-                  <p className="text-sm text-gray-500 mt-1">Protect IRR</p>
+                  <CardTitle className="text-xl font-medium text-[#003366]">Monthly Protection</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$349<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Stable portfolio companies</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
-                    <p className="text-gray-600">Up to 10 portcos</p>
+                    <p className="text-gray-600">1 domain (+$99/month each additional)</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Daily scans</p>
+                    <p className="text-gray-600">Monthly scans (12/year)</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">Risk monitoring, quarterly reports</p>
+                    <p className="text-gray-600">Monthly reports, email alerts, dashboard access</p>
                   </div>
-                  <Button className="btn-primary w-full mt-4">Get Portfolio 10</Button>
+                  <Button className="btn-primary w-full mt-4">Get Monthly</Button>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-[#E3B341] rounded-lg overflow-hidden relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-[#E3B341] text-[#1a1a1a] px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+                </div>
+                <CardHeader className="bg-[#fafafa] pb-4 pt-6">
+                  <CardTitle className="text-xl font-medium text-[#003366]">Weekly Protection</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$749<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">Active development teams</p>
+                </CardHeader>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
+                    <p className="text-gray-600">1 domain (+$199/month each additional)</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
+                    <p className="text-gray-600">Weekly scans (52/year)</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
+                    <p className="text-gray-600">Weekly reports + monthly summary, Email + Slack alerts, priority support</p>
+                  </div>
+                  <Button className="btn-primary w-full mt-4">Get Weekly</Button>
                 </CardContent>
               </Card>
 
               <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
                 <CardHeader className="bg-[#fafafa] pb-4">
-                  <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 50</CardTitle>
-                  <div className="text-3xl font-bold text-[#003366] mt-2">$5,000<span className="text-lg font-medium">/month</span></div>
-                  <p className="text-sm text-gray-500 mt-1">Protect IRR</p>
+                  <CardTitle className="text-xl font-medium text-[#003366]">Daily Protection</CardTitle>
+                  <div className="text-3xl font-bold text-[#003366] mt-2">$1,499<span className="text-lg font-medium">/month</span></div>
+                  <p className="text-sm text-gray-500 mt-1">High-growth or compliance-heavy</p>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4">
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
-                    <p className="text-gray-600">Up to 50 portcos</p>
+                    <p className="text-gray-600">1 domain (+$399/month each additional)</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Daily scans</p>
+                    <p className="text-gray-600">Daily scans (365/year)</p>
                   </div>
                   <div>
                     <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">Risk monitoring, quarterly reports</p>
+                    <p className="text-gray-600">Real-time issue detection, daily change tracking, dedicated success manager</p>
                   </div>
-                  <Button className="btn-primary w-full mt-4">Get Portfolio 50</Button>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-[#d4d4d4] rounded-lg overflow-hidden">
-                <CardHeader className="bg-[#fafafa] pb-4">
-                  <CardTitle className="text-xl font-medium text-[#003366]">Portfolio 150</CardTitle>
-                  <div className="text-3xl font-bold text-[#003366] mt-2">$10,000<span className="text-lg font-medium">/month</span></div>
-                  <p className="text-sm text-gray-500 mt-1">Protect IRR</p>
-                </CardHeader>
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <h4 className="font-medium text-[#003366] mb-1">Coverage</h4>
-                    <p className="text-gray-600">Up to 150 portcos</p>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-[#003366] mb-1">Cadence</h4>
-                    <p className="text-gray-600">Daily scans</p>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-[#003366] mb-1">Deliverables</h4>
-                    <p className="text-gray-600">Risk monitoring, quarterly reports</p>
-                  </div>
-                  <Button className="btn-primary w-full mt-4">Get Portfolio 150</Button>
+                  <Button className="btn-primary w-full mt-4">Get Daily</Button>
                 </CardContent>
               </Card>
             </div>
